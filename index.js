@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const PORT = 8080;
 const { dbConnection } = require('./config/config');
-const routes = require('./routes');
+const routes = require('./routes/tasks');
 app.use(express.json());
 const swaggerUI = require('swagger-ui-express')
 const docs = require('./docs/index')
